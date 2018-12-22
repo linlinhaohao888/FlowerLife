@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--<EditText-->
+    <!--android:id="@+id/edit_text1"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:inputType="number"-->
+    <!--android:hint="时间s"-->
+    <!--android:layout_marginTop="20dp"/>-->
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tool"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradcolor">
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:id="@+id/mainBG"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:background="@drawable/gradcolor">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+            <TextView
+                android:id="@+id/sumtime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="25"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="20dp"/>
+            <TextView
+                android:id="@+id/time_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5'06''"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"
+                android:layout_centerHorizontal="true"/>
+            <TextView
+                android:id="@+id/num_running"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="89"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"
+                android:layout_alignBaseline="@id/times"
+                android:layout_toStartOf="@id/times"/>
+            <TextView
+                android:id="@+id/times"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="次"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:layout_alignBaseline="@id/sumtime"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="20dp"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="261"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:textSize="40pt"/>
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/num"
+            android:text="公里"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/semicircles" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_account"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/btn_plant"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40dp"/>
+
+        <Button
+            android:id="@+id/btn_confirm"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:text="GO"
+            android:textSize="35sp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:typeface="sans"
+            android:background="@drawable/btn_main"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"/>
+
+        <Button
+            android:id="@+id/btn_settings"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/btn_settings"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="40dp"/>
+    </RelativeLayout>
+
+</LinearLayout>

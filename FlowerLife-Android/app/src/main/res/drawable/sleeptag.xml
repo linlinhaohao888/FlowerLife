@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/tag"
+        android:gravity="center"/>
+    <item android:drawable="@drawable/sleep"
+        android:gravity="center" />
+</layer-list>
