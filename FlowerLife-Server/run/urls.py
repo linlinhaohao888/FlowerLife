@@ -18,4 +18,5 @@ from . import views
 
 urlpatterns = [
     path('update/', views.update),
+    path('info/', views.info)
 ]

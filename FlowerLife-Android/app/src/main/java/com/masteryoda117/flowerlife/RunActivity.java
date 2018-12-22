@@ -220,7 +220,7 @@ public class RunActivity extends AppCompatActivity {
                         .build();
 
                 Request request = new Request.Builder()
-                        .url("http://183.172.209.247:8000/flowerLife/update/")
+                        .url("http://47.106.112.133/flowerLife/update/")
                         .post(requestBody)
                         .build();
 
